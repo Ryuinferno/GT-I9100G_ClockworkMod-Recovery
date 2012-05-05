@@ -217,6 +217,8 @@ on post-fs
 # Vibetonz
     export TMPDIR /data/local/tmp
     symlink /data/local/tmp /tmp
+    chmod 0666 /dev/tspdrv
+    chown root shell /dev/tspdrv
 
 # sgx DDK driver
     chmod 0666 /dev/pvrsrvkm
