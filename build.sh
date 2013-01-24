@@ -32,6 +32,7 @@ case "$1" in
         for module in "${MODULES[@]}" ; do
             cp "${module}" ../${INITRAMFS_ANDROID}/lib/modules/
         done
+        chmod 644 ../${INITRAMFS_ANDROID}/lib/modules/*
         cd ..
 
         # create the android ramdisk
